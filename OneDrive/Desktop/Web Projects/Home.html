@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js"></script>
+        <title>Webpage</title>
+        <style>
+            body {
+                margin: 0px;
+                margin-top: -2.5vh;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-image: url('tallpic.jpg');
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .top {
+                color: white;
+                float: left;
+                position: relative;
+                bottom: 1vh;
+                left: 2em;
+            }
+
+            ul {
+                background-color: black;
+                text-align: right;
+                padding: 1rem;
+            }
+
+            li {
+               color: white;
+               display: inline;
+               margin-right: -0.3vw;
+               padding: 1em;
+               background-color: black;
+               position: relative;
+               left: 0.75vw;
+            }
+
+            li:hover {
+                background-color: grey;
+            }
+
+            .dropdown {
+                margin-top: 0px;
+                position: relative;
+                bottom: 1.9vh;
+                visibility: hidden;
+            }
+
+            div {
+                color: white;
+                background: black;
+                padding: 10vh;
+                margin-top: 50vh;
+            }
+
+            .sect3 {
+                margin-bottom: 30vh;
+            }
+        </style>
+        <script>
+            $(function(){
+                $('.dropdown').slideUp(0.0001);
+                $('li').click(function(){
+                    $('.dropdown').css('visibility','visible');
+                    $('.dropdown').slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2 class="top">Classy Page</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <ul class='dropdown'>
+            <li>poop is real?!</li>
+        </ul>
+        <div class='sect1'>
+            <h1>Header</h1>
+            <p>
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+            </p>
+        </div>
+        <div class='sect2'>
+            <h1>Header 2</h1>
+            <p>
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+            </p>
+        </div>
+        <div class='sect3'>
+            <h1>Header 3</h1>
+            <p>  
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+                small body intro small body intro small body intro small body intro 
+            </p>
+        </div>
+    </body>
+</html>
